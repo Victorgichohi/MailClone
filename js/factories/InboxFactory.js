@@ -1,11 +1,4 @@
 /**
- * Created by victor on 1/23/16.
- */
-/**
- * Factory: InboxFactory
- */
-
-/**
  * Factory: InboxFactory
  */
 angular.module('EmailApp')
@@ -17,7 +10,8 @@ angular.module('EmailApp')
 
         exports.goToMessage = function(id) {
             if ( angular.isNumber(id) ) {
-                // $location.path('inbox/email/' + id)
+                console.log('inbox/email/' + id)
+                $location.path('inbox/email/' + id)
             }
         }
 
